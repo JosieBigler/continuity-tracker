@@ -53,15 +53,15 @@ class Home extends Component<HomeProps> {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20 }}>
             <div>
               <span>Adventures</span><br/>
-              {adventures.map(el => <Card {...el}/>)}
+              {adventures.map(el => <Card key={(el.id)} {...el}/>)}
             </div>
             <div>
               <span>Locations</span><br/>
-              {locations.map(el => <Card {...el}/>)}
+              {locations.map(el => <Card key={(el.id)} {...el}/>)}
             </div>
             <div>
               <span>NPCs</span><br/>
-              {npcs.map(el => <Card {...el}/>)}
+              {npcs.map(el => <Card key={(el.id)} {...el}/>)}
             </div>
         </div>
       </>
