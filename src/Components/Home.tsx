@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import Card from './Card';
+import Form from './Form';
 
 interface HomeProps {
   title: string;
   subtitle?: string;
 }
 
+const testObject1 = {home:"1", number: 1};
+const testObject2 = {name:2, value: "value32"};
 const adventures = [
     {
         title: "Adventure 1",
@@ -75,6 +78,8 @@ class Home extends Component<HomeProps> {
               {npcs.map(el => <Card key={(el.id)} {...el}/>)}
             </div>
         </section> 
+        <Form object={testObject1}></Form>
+        <Form object={testObject2}></Form>
       </>
     );
   }
