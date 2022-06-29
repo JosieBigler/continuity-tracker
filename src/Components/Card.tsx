@@ -15,7 +15,6 @@ class Card extends Component<CardProps> {
     return (
       <div className='card'>
       <div className='img-container' style={{ backgroundImage: `url(${image})` }}></div>
-        {/* <div className='img-container' style={{ backgroundImage: `url("/images/adventure-placeholder.png")` }}></div> */}
         <div className='container'>
           <h4>{title}</h4>
           <p>{date}</p>
@@ -24,5 +23,5 @@ class Card extends Component<CardProps> {
     );
   }
 }
-// require('./logo.jpeg') ./images/adventure-placeholder.png
+
 export default Card;
