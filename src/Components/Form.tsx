@@ -11,8 +11,17 @@ class Form extends Component<any, any> {
     }
     render() {
       return (
-        <div>Look in the console.</div>
+        <input
+        type="text"
+        id="Name"
+        onChange={this.save}
+        value="name"
+      />
       );
+    }
+
+    save(obt:any){
+        console.log(obt);
     }
 
     readAllProps(obj: any){
